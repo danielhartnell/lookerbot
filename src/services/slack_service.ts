@@ -32,6 +32,7 @@ export class SlackService extends Service {
   protected start() {
 
     this.controller = botkit.slackbot({
+      stats_optout: true,
       debug: config.debugMode,
     })
 
